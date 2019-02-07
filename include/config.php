@@ -4,25 +4,14 @@
 ## Local Configuration Script
 ###############################
 
+require 'config.sensitive.php'; //sensitive private data: urls, passwords, keys
+
 # All custom settings should be entered in this file.
 # Options may be copied from config.default.php and configured here.
-
-# MySQL database settings
-//$mysql_server = 'localhost';
-$mysql_server = 'resourcespace.cwol69gtjljp.eu-west-1.rds.amazonaws.com';
-
-//$mysql_username = 'root';
-$mysql_username = 'ResourceSpace';
-$mysql_password = '12345678';
-//$mysql_db = 'resourcespace';
-
-$mysql_db = 'ResourceSpace';
-
 
 $mysql_bin_path = '/usr/bin';
 
 # Base URL of the installation
-#$baseurl = 'http://ec2-52-31-86-182.eu-west-1.compute.amazonaws.com/resourcespace';
 $baseurl = 'http://gallery.midburn.org';
 
 # Email settings
@@ -34,27 +23,9 @@ $email_notify = 'it@midburn.org';
 
 # Use an external SMTP server for outgoing emails (e.g. Gmail).
 $use_smtp=true;
-# SMTP settings:
-$smtp_secure='tls'; # , 'tls' or 'ssl'. For Gmail, 'tls' or 'ssl' is required.
-$smtp_host='email-smtp.eu-west-1.amazonaws.com'; # Hostname, e.g. 'smtp.gmail.com'.
-$smtp_port=587; # Port number, e.g. 465 for Gmail using SSL.
-$smtp_auth=true; # Send credentials to SMTP server (false to use anonymous access)
-$smtp_username='AKIAIQSJ4L2TFY6NTV4A'; # Username (full email address).
-$smtp_password='AhOve0UAzg14hVcLZafnqXfABrNL1sofSksTr0JJiEg3'; # Password.
-#$smtp_username='AKIAIBAHRDTF7UONE42A'; # Username (full email address).
-#$smtp_password='Aq+SJhAUDeoU8zw/MVxDREz7lvnyjkbm8xa07CkYD6XP'; # Password.
-
-#$smtp_username='AKIAIOOCA46B46PNG2HQ'; # Username (full email address).
-#$smtp_password='AtAgMhBzGSooiAz7yDoUQmy8y5PbSyO5sHAQYDhcpFiN'; # Password.
-
 #enable php mailer - this is also to allow HTML format emails.
 $use_phpmailer=true;
 
-
-$spider_password = 'EnU6UQUzeZYd';
-$scramble_key = 'EPaWAWETy6aR';
-
-$api_scramble_key = 'yGEWAsa2ErAs';
 
 # Paths
 $imagemagick_path = '/usr/bin';

@@ -1,0 +1,13 @@
+filestore/
+filestore1/
+filestore2/
+filestore3/
+phpmyadmin/
+phpmyadmin.local/
+plugins1/
+plugins3/
+plugins_orig2/
+spark/
+documentation/
+include/config.sensitive.php
+.svn/
